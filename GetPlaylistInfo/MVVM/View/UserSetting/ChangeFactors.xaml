@@ -1,0 +1,46 @@
+﻿<Page x:Class="GetPlaylistInfo.MVVM.View.UserSetting.ChangeFactors"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+     xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+      xmlns:local="clr-namespace:GetPlaylistInfo.MVVM.View.UserSetting"
+      mc:Ignorable="d" Width="550"
+      Title="ChangeFactors" Height="240">
+
+    <Grid>
+        <Border x:Name="blckChangeFactors" Margin="0 0 0 0" BorderBrush="Black" BorderThickness="1" Height="230" Width="540">
+
+            <StackPanel Margin="0 0 0 0" HorizontalAlignment="Center">
+                <TextBlock Margin="0 5 0 0" HorizontalAlignment="Center" FontSize="18" FontWeight="SemiBold" FontStyle="Italic" TextWrapping="WrapWithOverflow" TextAlignment="Center" Text="Check/uncheck the features you want the system to factor in during the recommendation process." Foreground="#FF795548"/>
+                <StackPanel Margin="0 20 0 0" HorizontalAlignment="Center">
+                    <Grid HorizontalAlignment="Center">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="175"/>
+                            <ColumnDefinition Width="130"/>
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                        </Grid.RowDefinitions>
+
+
+
+                        <CheckBox IsChecked="False" x:Name="BtnAcousticness" FontSize="18" Content="Acousticness" FontWeight="SemiBold"  FontFamily="Yu Gothic UI"/>
+                        <CheckBox  Grid.Row="1" x:Name="BtnDanceability" FontSize="18" Content="Danceability" FontWeight="SemiBold" FontFamily="Yu Gothic UI"/>
+                        <CheckBox  Grid.Row="2" x:Name="BtnEnergy" FontSize="18" Content="Energy" FontWeight="SemiBold" FontFamily="Yu Gothic UI"/>
+                        <CheckBox Grid.Row ="3" x:Name="BtnInstrumentalness" FontSize="18" Content="Instrumentalness" FontWeight="SemiBold" FontFamily="Yu Gothic UI"/>
+                        <CheckBox Grid.Column="1" Grid.Row="0" x:Name="BtnLiveness" FontSize="18" Content="Liveness" FontWeight="SemiBold" FontFamily="Yu Gothic UI"/>
+                        <CheckBox  Grid.Column="1" Grid.Row="1" x:Name="BtnLoudness" FontSize="18" Content="Loudness" FontWeight="SemiBold" FontFamily="Yu Gothic UI"/>
+                        <CheckBox Grid.Column="1" Grid.Row="2" x:Name="BtnValence" FontSize="18" Content="Valence" FontWeight="SemiBold" FontFamily="Yu Gothic UI"/>
+                    </Grid>
+                </StackPanel>
+                <Button Margin ="0 10 0 0" HorizontalAlignment="Center" VerticalAlignment="Bottom"
+                    Content="Confirm Changes" x:Name="BtnConfirmChanges" Click="BtnConfirmChanges_Click"/>
+            </StackPanel>
+        </Border>
+
+    </Grid>
+</Page>
