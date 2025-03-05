@@ -1,7 +1,10 @@
-# Music-Recommendation-System
- Created a program to give music recommendations to a user based on a Spotify playlist they provided. Fetched and collected data from the API and displayed and stored the formulated data in a local database.
+# Music-Recommendation-System - LEGACY
+A Music Recommendation System was developed as part of an A-Level NEA project, offering personalized music recommendations based on a user's Spotify playlist. The program fetches data from the Spotify API, processes it, and stores the recommendations in a local database.
 
-Please note: I created this program for my A Level NEA Project, I learnt collections and fetching and modifying data while making it so the code may not be the most efficient. I have included my NEA report as well which explains my thought process behind the code and why I chose to implement in the way I did.
+The implementation involved using collections, data fetching, and data manipulation. While the code may not be fully optimized, it serves as a functional prototype demonstrating key concepts learned during the project.
 
-SQL can be found in: Music-Recommendation-System/GetPlaylistInfo/MVVM/ViewModel/FetchFromTable.cs
-The main code can be found in Music-Recommendation-System/GetPlaylistInfo/MVVM/ViewModel/
+As of November 2024, the (Spotify Web API has been deprecated)[https://developer.spotify.com/blog/2024-11-27-changes-to-the-web-api], and any plans for reoptimization have been shelved due to this change.
+
+SQL code can be found in Music-Recommendation-System/GetPlaylistInfo/MVVM/ViewModel/FetchFromTable.cs, with the core logic in Music-Recommendation-System/GetPlaylistInfo/MVVM/ViewModel. The accompanying NEA report outlines the thought process and implementation decisions.
+
+
